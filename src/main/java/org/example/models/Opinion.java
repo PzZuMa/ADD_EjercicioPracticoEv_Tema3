@@ -5,9 +5,8 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-
 /**
- * Clase que representa la entidad 'Opinion'
+ * Clase que representa la entidad de la base de datos 'Opinion'
  */
 @Data
 @Entity
@@ -21,7 +20,7 @@ public class Opinion implements Serializable {
     private String usuario;
     private Integer puntuacion;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     @JoinColumn(name = "pelicula_id")
     private Pelicula pelicula;
 

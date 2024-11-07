@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * Clase que representa la entidad 'Pelicula'
+ * Clase que representa la entidad de la base de datos 'Pelicula'
  */
 @Data
 @Entity
